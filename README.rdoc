@@ -1,12 +1,22 @@
-= YahooAdsEstimates
+= Yahoo::AdsEstimates
 
-YahooAdsEstimates is a rails plugin for querying Yahoo's ads service for estimates of Max CPC, Impressions, and Clicks.
+Yahoo::AdsEstimates is a rails plugin for querying Yahoo's ads service for estimates of Max CPC, Impressions, and Clicks.
 
 == Usage
 
+y = Yahoo::AdsEstimates.new('git')
+y.max_cpcs
+=> [1.12, 1.12]
+y.impressions
+=> [1.43, 1.43]
+y.clicks
+=> [0.09, 0.09]
 
+y = Yahoo::AdsEstimates.new('git', [10.0])
+y.max_cpcs
+=> [1.12]
 
 == Credits
 
-YahooAdsEstimates was created, and is maintained by {Joshua Krall}[http://github.com/jkrall].  More info at {Transparent Development}[http://transfs.com/devblog], the {Transparent Financial Services}[http://transfs.com] development blog.
+Yahoo::AdsEstimates was created, and is maintained by {Joshua Krall}[http://github.com/jkrall].  More info at {Transparent Development}[http://transfs.com/devblog], the {Transparent Financial Services}[http://transfs.com] development blog.
 
