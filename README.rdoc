@@ -4,17 +4,17 @@ Yahoo::AdsEstimates is a rails plugin for querying Yahoo's ads service for estim
 
 == Usage
 
-y = Yahoo::AdsEstimates.new('git')
-y.max_cpcs
-=> [1.12, 1.12]
-y.impressions
-=> [1.43, 1.43]
-y.clicks
-=> [0.09, 0.09]
+  y = Yahoo::AdsEstimates.new('git')
+  y.max_cpcs  
+  => [1.12, 1.12]
+  y.impressions
+  => [1.43, 1.43]
+  y.clicks
+  => [0.09, 0.09]
 
-y = Yahoo::AdsEstimates.new('git', [10.0])
-y.max_cpcs
-=> [1.12]
+  y = Yahoo::AdsEstimates.new('git', [10.0])
+  y.max_cpcs
+  => [1.12]
 
 == Credits
 
