@@ -39,7 +39,7 @@ Rake::TaskManager.class_eval do
     @tasks.delete(task_name.to_s)
   end
 end
- 
+
 def remove_task(task_name)
   Rake.application.remove_task(task_name)
 end
@@ -47,4 +47,20 @@ end
 remove_task "default"
 task :default do
   Rake::Task["verify_rcov"].invoke
+end
+
+
+
+begin
+  require 'jeweler'
+  Jeweler::Tasks.new do |gemspec|
+    gemspec.name = "yahoo_ads_estimates"
+    gemspec.summary = "Rails plugin for querying Yahoo Ads for estimated CPC, impressions, and clicks"
+    gemspec.email = "josh@transfs.com"
+    gemspec.homepage = "http://github.com/jkrall/yahoo_ads_estimates"
+    gemspec.authors = ["Joshua Krall"]
+  end
+  Jeweler::GemcutterTasks.new
+rescue LoadError
+  puts "Jeweler not available. Install it with: sudo gem install jeweler"
 end
