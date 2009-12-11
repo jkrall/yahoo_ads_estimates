@@ -59,6 +59,7 @@ begin
     gemspec.email = "josh@transfs.com"
     gemspec.homepage = "http://github.com/jkrall/yahoo_ads_estimates"
     gemspec.authors = ["Joshua Krall"]
+    gemspec.add_dependency('json')
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
