@@ -24,7 +24,11 @@ module Yahoo
           @clicks << result['clicks'].to_f
           @max_cpcs << result['maxBid'].to_f
         rescue
-          RAILS_DEFAULT_LOGGER.info "Problem querying and parsing Yahoo, json: #{json}"
+          if defined?(RAILS_DEFAULT_LOGGER)
+            RAILS_DEFAULT_LOGGER.info "Problem querying and parsing Yahoo, json: #{json}"
+          else
+            puts "Problem querying and parsing Yahoo, json: #{json}"
+          end
         end
       end
     end
