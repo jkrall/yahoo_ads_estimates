@@ -23,6 +23,7 @@ Gem::Specification.new do |s|
      "init.rb",
      "install.rb",
      "lib/yahoo/ads_estimates.rb",
+     "lib/yahoo_ads_estimates.rb",
      "rails/init.rb",
      "spec/rcov.opts",
      "spec/spec.opts",
