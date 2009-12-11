@@ -23,11 +23,13 @@ Gem::Specification.new do |s|
      "init.rb",
      "install.rb",
      "lib/yahoo/ads_estimates.rb",
+     "rails/init.rb",
      "spec/rcov.opts",
      "spec/spec.opts",
      "spec/spec_helper.rb",
      "spec/yahoo/ads_estimates_spec.rb",
-     "uninstall.rb"
+     "uninstall.rb",
+     "yahoo_ads_estimates.gemspec"
   ]
   s.homepage = %q{http://github.com/jkrall/yahoo_ads_estimates}
   s.rdoc_options = ["--charset=UTF-8"]
