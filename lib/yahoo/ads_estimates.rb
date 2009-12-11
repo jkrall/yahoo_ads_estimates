@@ -1,4 +1,5 @@
 require 'uri'
+require 'open-uri'
 require 'json'
 
 module Yahoo
@@ -42,8 +43,7 @@ module Yahoo
     end
 
     def query(_budget)
-      open(request_uri(_budget)) { |f| return f.string }
-      nil
+      open(request_uri(_budget)) { |f| f.string }
     end
 
   end
