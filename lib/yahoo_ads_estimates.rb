@@ -1,0 +1,1 @@
+require 'yahoo/ads_estimates'
